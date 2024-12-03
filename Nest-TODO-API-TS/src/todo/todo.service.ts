@@ -10,8 +10,9 @@ export class TodoService {
     todo.id = currentMaxId + 1;
     this.storage.push(todo);
   }
-  createAll(todos: Todo[]): void {
+  createAll(todos: Todo[]): string {
     this.storage = todos;
+    return "OK"
   }
 
   findAll(): Todo[] {

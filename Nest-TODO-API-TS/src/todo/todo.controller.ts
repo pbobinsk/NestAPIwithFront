@@ -26,7 +26,7 @@ export class TodoController {
   }
 
   @Get('mock')
-  createMock(): void {
+  createMock(): string {
     this.logger.log('Handling createMock() blueprint request...');
     const todos = [
       {
